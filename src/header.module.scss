@@ -1,0 +1,24 @@
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    top: 10%;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &-title{
+        color:#F8794E;
+        font-size: 100px;
+        font-family: 'Overpass', sans-serif;
+        font-weight: bold;
+        justify-self: flex-start;
+        align-self: flex-start;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-left: 40px;
+    }
+    
+   
+}

@@ -1,0 +1,42 @@
+.bookcard {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 100px;
+
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    row-gap: 15px;
+    padding: 56px 76px;
+  }
+  &-cover {
+    width: 288px;
+    height: 391px;
+    margin-right: 50px;
+    align-self: flex-start;
+    filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &-info {
+    align-self: flex-start;
+    &__title {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    &__author {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+  }
+}

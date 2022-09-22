@@ -1,0 +1,17 @@
+.searchpage {
+  position: relative;
+
+  &-wrapper {
+    position: absolute;
+    left: 35%;
+  }
+  &-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #dcf7ff;
+    align-self: flex-start;
+    grid-column: 1/4;
+    margin-top: 110px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,23 @@
+.pagenotfound {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top:30%;
+    left:40%;
+    
+    font-weight: 700;
+    &-digits {
+        font-size: 96px;
+        
+        
+    }
+
+    &-title {
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+
+   
+}

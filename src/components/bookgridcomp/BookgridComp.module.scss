@@ -1,0 +1,10 @@
+.bookgrid {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: baseline;
+    margin: 0 auto;
+    // position: absolute;
+    // right:5%;
+    // top:5%;
+    
+}

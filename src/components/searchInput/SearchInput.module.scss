@@ -1,0 +1,27 @@
+.search {
+  &-label {
+    position: relative;
+    
+  }
+  &-input {
+    background-color: transparent;
+    outline: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid #F8794E;
+    color: #dcf7ff;
+    font-size: 18px;
+    padding-right: 25px;
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+  &-icon {
+    right: 0;
+    position: absolute;
+  }
+}
