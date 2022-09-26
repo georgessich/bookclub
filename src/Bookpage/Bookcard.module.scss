@@ -4,14 +4,19 @@
   justify-content: center;
   width: 80%;
   margin-bottom: 100px;
-
+  @media (max-width: 1560px) {
+    width: inherit;
+  }
   &-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     row-gap: 15px;
     padding: 56px 76px;
+    @media (max-width:450px) {
+      display: block;
+    }
   }
   &-cover {
     width: 288px;
@@ -19,6 +24,17 @@
     margin-right: 50px;
     align-self: flex-start;
     filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+    @media (max-width:990px) {
+      width: 230px;
+      height: 312px;
+    }
+    @media (max-width:830px) {
+      width: 180px;
+      height: 248px;
+    }
+    @media (max-width:450px) {
+     margin-bottom: 20px;
+    }
   }
 
   &-info {
@@ -27,6 +43,9 @@
       font-size: 40px;
       font-weight: 700;
       margin-bottom: 20px;
+      @media(max-width:990px) {
+        font-size: 24px;
+      }
     }
 
     &__author {
