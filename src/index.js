@@ -8,16 +8,12 @@ import AuthorPage from "./AuthorPage/AuthorPage";
 import SearchResultPage from "./SearchResult/SearchResultPage";
 import PageNotFound from "./PageNotFound/PageNotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+
 import SearchContextProvider from "./store/search-context";
-const client = new ApolloClient({
-  uri: "http://localhost:4000",
-  cache: new InMemoryCache(),
-});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ApolloProvider client={client}>
+  
     <SearchContextProvider>
       <BrowserRouter>
         <Header />
@@ -30,7 +26,7 @@ root.render(
         </Routes>
       </BrowserRouter>
     </SearchContextProvider>
-  </ApolloProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

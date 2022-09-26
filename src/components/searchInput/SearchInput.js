@@ -16,8 +16,8 @@ const SearchInput = () => {
     handleClick()
   };
   const handleEnterKey = (e) => {
-
-    if (e.keyCode === 13) {
+    console.log(searchContext)
+    if (e.keyCode === 13 && searchQuery !== "") {
       searchQueryHandler();
       navigate(`/result/${searchQuery}`)
     }

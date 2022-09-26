@@ -15,6 +15,7 @@ const Bookcard = (props) => {
           <div className={classes["bookcard-info__descr"]}>
             {props.description}
           </div>
+          <a className={classes["bookcard-info__link"]} href={props.downloadLink}>Скачать PDF</a>
         </div>
       </div>
     </div>
