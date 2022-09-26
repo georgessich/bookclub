@@ -4,6 +4,9 @@
   &-wrapper {
     position: absolute;
     left: 35%;
+    @media(max-width:760px) {
+      left: 25%;
+    }
   }
   &-title {
     font-size: 32px;
@@ -13,5 +16,11 @@
     grid-column: 1/4;
     margin-top: 110px;
     margin-bottom: 50px;
+    @media(max-width:1560px) {
+      margin-top: 20px;
+    }
+    @media(max-width:450px) {
+      font-size: 18px;
+    }
   }
 }
