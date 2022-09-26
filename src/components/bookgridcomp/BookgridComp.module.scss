@@ -3,8 +3,17 @@
     grid-template-columns: repeat(3, max-content);
     align-items: baseline;
     margin: 0 auto;
-    // position: absolute;
-    // right:5%;
-    // top:5%;
-    
+    @media(max-width:1560px) {
+        margin: 50px auto;
+        justify-content: center;
+    }
+    @media (max-width:1090px) {
+        grid-template-columns: repeat(2, max-content);
+    }
+    @media (max-width:435px) {
+        grid-template-columns: repeat(1, max-content);
+    }
+    // @media(max-width: 600px) {
+    //     grid-template-columns: repeat(1, max-content);
+    // }
 }

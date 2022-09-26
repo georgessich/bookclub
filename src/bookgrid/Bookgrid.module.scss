@@ -1,0 +1,9 @@
+.bookgrid{
+    position: absolute;
+    top: 10%;
+    right: 0;
+
+    @media(max-width:1570px){
+        position: inherit;
+    }
+}

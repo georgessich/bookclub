@@ -2,7 +2,7 @@ import Book from "./Book";
 import { useState, useEffect } from 'react';
 import QueryResult from "../components/QueryResult";
 import BookgridComp from "../components/bookgridcomp/BookgridComp";
-
+import classes from "./Bookgrid.module.scss"
 const Bookgrid = () => {
 const [ books, setBooks ] = useState([]);
 const [ isLoading, setIsLoading ] = useState(true);
@@ -40,7 +40,7 @@ console.log(books)
   return (
 
     <QueryResult error={httpError} loading={isLoading} data={books}>
-    <div style={{position: "absolute", right:"0", top: "10%"}}>
+    <div className={classes['bookgrid']}>
       <BookgridComp>
       
           {books?.map((book) => (
